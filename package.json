@@ -1,0 +1,14 @@
+{
+  "name": "wirenboard_ws_mqtt_bridge",
+  "version": "1.0.0",
+  "description": "Wirenboard WebSocket-MQTT bridge",
+  "author": "Alexander Bartenev <bartworkmail@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mqtt": "^4.3.7",
+    "ws": "^8.12.1"
+  }
+}
