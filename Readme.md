@@ -6,5 +6,7 @@ docker pull bartwork/wirenboard_ws_mqtt_bridge
 docker run -p 8080:8080 --network="host" -d bartwork/wirenboard_ws_mqtt_bridge  
 
 ### Пример простой отправки сообщения в топик
-let message = JSON.stringify({ topic: "/devices/wb-mr6cu_43/controls/K1/on", message: "0" })
-ws.send(message)
+```js
+let message = JSON.stringify({ topic: "/devices/wb-mr6cu_43/controls/K1/on", message: "0" })   
+ws.send(message)  
+```
