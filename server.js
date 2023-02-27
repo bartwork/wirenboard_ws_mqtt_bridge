@@ -9,7 +9,9 @@ wss.on("connection", ws => {
         let message;
         try {
             message = JSON.parse(data);
-            client.publish(message.topic, message.message)
+            if (message.hasOwnProperty('topic') && message.hasOwnProperty('message')) {
+                client.publish(message.topic, message.message)
+            }
         } catch (e) {
             return;
         }
